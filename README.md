@@ -1,5 +1,5 @@
 # code
-This is the source code and some evaluation scripts for our paper [PEN: Prediction-Explanation Network to Forecast Stock Price Movement with Better Explainability] ().
+This is the source code and some evaluation scripts for our paper [PEN: Prediction-Explanation Network to Forecast Stock Price Movement with Better Explainability]().
 Our code is based on https://github.com/yumoxu/stocknet-code
 
 

@@ -1,0 +1,76 @@
+---
+model:
+  mode: 'all'
+  variant_type: 'hedge' # hedge, tech, fund, discriminative
+  alpha: 0.5 # 0.1, 0.3, 0.5, 0.7, 0.9, 1.0
+  dropout_vmd_in: 0.3 #0.3
+  dropout_mel_in: 0.3 #0.3
+  n_epochs: 1
+  batch_size: 32
+
+  kl_lambda_anneal_rate: 0.005  # 0.005, 0.002, 0.001, 0.0005
+  kl_lambda_start_step: 0
+  daily_att: 'y'  # y, g
+
+  vmd_rec: 'zh'  # zh or h
+
+  opt: 'adam'  # sgd, adam
+  lr: 0.001
+  clip: 15.0
+
+  y_size: 2
+  use_constant_kl_lambda: 0
+  constant_kl_lambda: 0.1
+
+  word_embed_type: 'glove'
+  weight_init: 'xavier-uniform'
+  mel_cell_type: 'gru'  # basic, gru, ln-lstm
+  vmd_cell_type: 'gru'  # basic, gru, ln-lstm
+
+  word_embed_size: 50
+  stock_embed_size: 150
+  init_stock_with_word: 0
+  msin_h_size: 100
+  mel_h_size: 100
+  h_size: 150
+  g_size: 50
+
+  shuffle: 1
+  max_n_days: 5
+  max_n_msgs: 20
+  max_n_words: 30
+
+  decay_step: 100
+  decay_rate: 0.96
+  momentum: 0.9
+
+  use_in_bn: 0.0
+  use_o_bn: 0
+  use_g_bn: 0
+  dropout_mel: 0.0
+  dropout_ce: 0.0
+  dropout_vmd: 0.0
+
+dates:
+  train_start_date: '2008-08-08'
+  train_end_date: '2014-12-31'
+  dev_start_date: '2018-08-01'
+  dev_end_date: '2018-10-01'
+  test_start_date:  '2015-01-02'
+  test_end_date: '2016-07-01'
+
+stocks: 
+  ['DJIA']
+
+
+paths:
+  data: 'data_new/'
+  tweet_retrieved: 'news'
+  tweet_preprocessed: 'news'
+  price: 'price'
+  res: 'res/'
+  glove: 'glove.twitter.27B.50d.txt'
+  vocab_tweet: 'vocab.txt'
+  graphs: 'graphs'
+  checkpoints:  'check3d'
+  log: 'log/'
