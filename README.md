@@ -17,7 +17,7 @@ Our code is based on https://github.com/yumoxu/stocknet-code
     - Pre-trained embeddings of [GloVe](https://github.com/stanfordnlp/GloVe). We used the GloVe obtained from the Twitter corpora which you could download [here](http://nlp.stanford.edu/data/wordvecs/glove.twitter.27B.zip).
 - data:
     - ACL18 consisting of tweets and prices which you could download [here](https://github.com/yumoxu/stocknet-dataset).
-    - DJIA consisting of news and prices which you could download [here]([https://www.kaggle.com/datasets/aaron7sun/stocknews]).
+    - DJIA consisting of news and prices which you could download [here](https://www.kaggle.com/datasets/aaron7sun/stocknews).
 
 
 ## Configurations
