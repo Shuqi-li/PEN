@@ -3,6 +3,8 @@ This is the source code and some evaluation scripts for our paper [PEN: Predicti
 Our code is based on https://github.com/yumoxu/stocknet-code
 
 
+
+
 ## Dependencies
 - Python 2.7.11
 - Tensorflow 1.4.0
@@ -12,6 +14,7 @@ Our code is based on https://github.com/yumoxu/stocknet-code
 
 ## Directories
 - src: source files;
+    - The core code of our model is in `MSINModule.py`
 - res: resource files including,
     - Vocabulary file `vocab.txt`;
     - Pre-trained embeddings of [GloVe](https://github.com/stanfordnlp/GloVe). We used the GloVe obtained from the Twitter corpora which you could download [here](http://nlp.stanford.edu/data/wordvecs/glove.twitter.27B.zip).
@@ -21,12 +24,12 @@ Our code is based on https://github.com/yumoxu/stocknet-code
 
 
 ## Configurations
-All details about hyper-parameters are listed in `config.yml` and `config_d.yml`. 
+All details about hyper-parameters are listed in `src/config.yml` and `src/config_d.yml`. 
 
 See more information in 'Experimental Setup' of our paper.
 
 ## Running
-Use `sh src/run.sh` or `python Main.py` in your terminal to start model training and testing. 
+Use `sh src/run.sh` or `python src/Main.py` in your terminal to start model training and testing. 
 
 The default code corresponds to ACL18.
-For DJIA, simply replace `Executor` to `Executor_d` in `Main.py`.
+For DJIA, simply replace `Executor` to `Executor_d` in `src/Main.py`.
