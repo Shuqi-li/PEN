@@ -23,7 +23,7 @@ Our code is based on https://github.com/yumoxu/stocknet-code
 ## Configurations
 All details about hyper-parameters are listed in `config.yml` and `config_d.yml`. 
 
-See more information in `Experimental Setup` of our paper.
+See more information in 'Experimental Setup' of our paper.
 
 ## Running
 Use `sh src/run.sh` or `python Main.py` in your terminal to start model training and testing. 
